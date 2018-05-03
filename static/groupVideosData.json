@@ -1,0 +1,39 @@
+[
+  {
+    "title":"动画",
+    "lists":{
+      "laest": [
+        {"img_url":"1.png","id":1,"title":"血界战线12"},
+        {"img_url":"1.png","id":2,"title":"血界战线12"},
+        {"img_url":"1.png","id":3,"title":"血界战线12"},
+        {"img_url":"1.png","id":4,"title":"血界战线12"},
+        {"img_url":"1.png","id":5,"title":"血界战线12"}
+      ],
+      "hot": [
+        {"img_url":"1.png","id":1,"title":"三月的狮子24"},
+        {"img_url":"1.png","id":2,"title":"三月的狮子24"},
+        {"img_url":"1.png","id":3,"title":"三月的狮子24"},
+        {"img_url":"1.png","id":4,"title":"三月的狮子24"},
+        {"img_url":"1.png","id":5,"title":"三月的狮子24"}
+      ]
+    }
+  },
+  {
+    "title":"游戏","lists":{
+      "laest": [
+        {"img_url":"2.png","id":1,"title":"血界战线12"},
+        {"img_url":"2.png","id":2,"title":"血界战线12"},
+        {"img_url":"2.png","id":3,"title":"血界战线12"},
+        {"img_url":"2.png","id":4,"title":"血界战线12"},
+        {"img_url":"2.png","id":5,"title":"血界战线12"}
+      ],
+      "hot": [
+        {"img_url":"2.png","id":1,"title":"三月的狮子24"},
+        {"img_url":"2.png","id":2,"title":"三月的狮子24"},
+        {"img_url":"2.png","id":3,"title":"三月的狮子24"},
+        {"img_url":"2.png","id":4,"title":"三月的狮子24"},
+        {"img_url":"2.png","id":5,"title":"三月的狮子24"}
+      ]
+    }
+  }
+]
