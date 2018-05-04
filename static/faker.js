@@ -1,18 +1,17 @@
 //导入数据
 import bannerImgData from "./bannerImg.json"
 import patitionImgData from "./patition.json"
-import liveData from "./live.json"
-import spColData from "./spCol.json"
+import articlesData from "./articles.json"
 import groupVideosData from "./groupVideosData.json"
 import videosData from "./videos.json"
-import commentData from "./comments.json"
-import articlesData from "./articles.json"
+
+
+
 
 //事先把编译后的资源作为一个模板加载进来
 var banner_images = require.context('./pic/banner', false, /\.(png|jpg|gif|svg)$/)
 var patition_images = require.context('./pic/patition', false, /\.(png|jpg|gif|svg)$/)
 var groupVideos_images = require.context('./pic/videos', false, /\.(png|jpg|gif|svg)$/)
-var videos_videos = require.context('./videos',false,/\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/)
 var videos_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
 var comments_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
 var articles_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
@@ -33,7 +32,7 @@ groupVideosData.forEach((x)=> {
       })
     })
 })
-videosData.url = videos_videos('./'+videosData.url)
+
 videosData.author.img_url = videos_images('./'+videosData.author.img_url)
 commentData.forEach((x)=> {
     x.img_url = comments_images('./' + x.img_url)
@@ -48,20 +47,11 @@ export default{
     patitionImgData() {
       return patitionImgData
     },
-    liveData(){
-      return liveData
-    },
-    spColData(){
-      return spColData
-    },
     groupVideosData(){
       return groupVideosData
     },
     videosData(){
       return videosData
-    },
-    commentData(){
-      return commentData
     },
     articlesData(){
       return articlesData
