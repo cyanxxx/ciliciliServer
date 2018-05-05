@@ -13,7 +13,6 @@ var banner_images = require.context('./pic/banner', false, /\.(png|jpg|gif|svg)$
 var patition_images = require.context('./pic/patition', false, /\.(png|jpg|gif|svg)$/)
 var groupVideos_images = require.context('./pic/videos', false, /\.(png|jpg|gif|svg)$/)
 var videos_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
-var comments_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
 var articles_images = require.context('./pic',false, /\.(png|jpg|gif|svg)$/)
 
 //相对路径拼接
@@ -34,9 +33,7 @@ groupVideosData.forEach((x)=> {
 })
 
 videosData.author.img_url = videos_images('./'+videosData.author.img_url)
-commentData.forEach((x)=> {
-    x.img_url = comments_images('./' + x.img_url)
-})
+
 articlesData.author.img_url = articles_images('./' + articlesData.author.img_url)
 
 //输出对象里面包含的方法
