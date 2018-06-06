@@ -19,7 +19,8 @@ app.all('*', function (req, res, next) {
 
 app.use('/oauth2/access_token', require('./router/auth'))
 app.use('/users/show.json', require('./router/userInfo'))
-app.use('/2/statuses/home_timeline.json', require('./router/timeline'))
+app.use('/2/statuses/home_timeline.json', require('./router/timeLine'))
+app.use('/2/comments/show.json', require('./router/content_comments'))
 
 
 
