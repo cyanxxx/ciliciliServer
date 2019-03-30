@@ -24,7 +24,7 @@ app.use('/2/comments/show.json', require('./router/content_comments'))
 
 
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log(`server running @${port}`);
 })
