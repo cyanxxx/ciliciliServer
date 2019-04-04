@@ -6,6 +6,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(require('connect-history-api-fallback')())
 app.use(express.static('public'));
+
 // 跨域设置
 app.all('*', function (req, res, next) {
   res.header("Access-Control-Allow-Credentials", true)
@@ -21,8 +22,6 @@ app.use('/oauth2/access_token', require('./router/auth'))
 app.use('/users/show.json', require('./router/userInfo'))
 app.use('/2/statuses/home_timeline.json', require('./router/timeLine'))
 app.use('/2/comments/show.json', require('./router/content_comments'))
-
-
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
